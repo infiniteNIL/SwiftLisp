@@ -11,6 +11,9 @@
 		DCFDEA8322694681002A6F83 /* REPL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFDEA8022694681002A6F83 /* REPL.swift */; };
 		DCFDEA8422694681002A6F83 /* SwiftLispCommandLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFDEA8122694681002A6F83 /* SwiftLispCommandLine.swift */; };
 		DCFDEA87226946BD002A6F83 /* libedit.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFDEA86226946BD002A6F83 /* libedit.tbd */; };
+		DCFDEA89226949CB002A6F83 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFDEA88226949CB002A6F83 /* Token.swift */; };
+		DCFDEA8B22694A3C002A6F83 /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFDEA8A22694A3C002A6F83 /* Reader.swift */; };
+		DCFDEA8D22694CB7002A6F83 /* SExpr.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFDEA8C22694CB7002A6F83 /* SExpr.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +35,9 @@
 		DCFDEA8122694681002A6F83 /* SwiftLispCommandLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftLispCommandLine.swift; sourceTree = "<group>"; };
 		DCFDEA8222694681002A6F83 /* SwiftLispBridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftLispBridgingHeader.h; sourceTree = "<group>"; };
 		DCFDEA86226946BD002A6F83 /* libedit.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libedit.tbd; path = usr/lib/libedit.tbd; sourceTree = SDKROOT; };
+		DCFDEA88226949CB002A6F83 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		DCFDEA8A22694A3C002A6F83 /* Reader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reader.swift; sourceTree = "<group>"; };
+		DCFDEA8C22694CB7002A6F83 /* SExpr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SExpr.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,9 @@
 				DCFDEA8022694681002A6F83 /* REPL.swift */,
 				DCFDEA8222694681002A6F83 /* SwiftLispBridgingHeader.h */,
 				DCFDEA8122694681002A6F83 /* SwiftLispCommandLine.swift */,
+				DCFDEA8C22694CB7002A6F83 /* SExpr.swift */,
+				DCFDEA88226949CB002A6F83 /* Token.swift */,
+				DCFDEA8A22694A3C002A6F83 /* Reader.swift */,
 			);
 			path = SwiftLispKit;
 			sourceTree = "<group>";
@@ -149,7 +158,10 @@
 			files = (
 				DCFDEA8322694681002A6F83 /* REPL.swift in Sources */,
 				DCFDEA8422694681002A6F83 /* SwiftLispCommandLine.swift in Sources */,
+				DCFDEA8D22694CB7002A6F83 /* SExpr.swift in Sources */,
+				DCFDEA8B22694A3C002A6F83 /* Reader.swift in Sources */,
 				DCFDEA79226945FE002A6F83 /* main.swift in Sources */,
+				DCFDEA89226949CB002A6F83 /* Token.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

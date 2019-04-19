@@ -15,7 +15,8 @@ class REPL {
 
         while true {
             if let input = readLine(prompt: "swiftlisp> ") {
-                print("No you're a \(input)")
+                let sexpr = SExpr.read(input)
+                print(sexpr)
             }
             print()
         }
