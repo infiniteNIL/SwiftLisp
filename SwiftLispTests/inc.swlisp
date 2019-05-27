@@ -1,0 +1,4 @@
+(defn inc1 [a] (+ 1 a))
+(defn inc2 [a] (+ 2 a))
+(defn inc3 [a]
+  (+ 3 a))

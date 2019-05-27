@@ -1,0 +1,79 @@
+(defn inc [a] (+ a 1))
+
+(defn dec [a] (- a 1))
+
+(defn zero? [n] (= 0 n))
+
+(defn reduce[f init xs]
+  (if (> (count xs) 0)
+    (reduce f (f init (first xs)) (rest xs))
+    init))
+
+(defn identity [x] x)
+
+(defn every? [pred xs]
+  (if (> (count xs) 0)
+    (if (pred (first xs))
+      (every? pred (rest xs))
+      false)
+    true))
+
+(defn not [x] (if x false true))
+
+(defn some [pred xs]
+  (if (> (count xs) 0)
+    (let [res (pred (first xs))]
+      (if (pred (first xs))
+        res
+        (some pred (rest xs))))
+    nil))
+
+(defmacro and [& xs]
+  (if (empty? xs)
+    true
+    (if (= 1 (count xs))
+      (first xs)
+      (let [condvar (gensym)]
+        `(let [~condvar ~(first xs)]
+          (if ~condvar (and ~@(rest xs)) ~condvar))))))
+
+(defmacro or [& xs]
+  (if (empty? xs)
+    nil
+    (if (= 1 (count xs))
+      (first xs)
+      (let [condvar (gensym)]
+        `(let [~condvar ~(first xs)]
+           (if ~condvar ~condvar (or ~@(rest xs))))))))
+
+(defmacro cond [& clauses]
+  (if (> (count clauses) 0)
+    (list 'if (first clauses)
+          (if (> (count clauses) 1)
+              (nth clauses 1)
+              (throw "cond requires an even number of forms"))
+          (cons 'cond (rest (rest clauses))))))
+
+(defmacro -> [x & xs]
+  (if (empty? xs)
+    x
+    (let [form (first xs)
+           more (rest xs)]
+      (if (empty? more)
+        (if (list? form)
+          `(~(first form) ~x ~@(rest form))
+          (list form x))
+        `(-> (-> ~x ~form) ~@more)))))
+
+(defmacro ->> [x & xs]
+  (if (empty? xs)
+    x
+    (let [form (first xs)
+           more (rest xs)]
+      (if (empty? more)
+        (if (list? form)
+          `(~(first form) ~@(rest form) ~x)
+          (list form x))
+        `(->> (->> ~x ~form) ~@more)))))
+
+nil

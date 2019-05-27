@@ -14,9 +14,23 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DCFDEA74226945FE002A6F83"
-               BuildableName = "SwiftLisp"
-               BlueprintName = "SwiftLisp"
+               BlueprintIdentifier = "DC80D1DD228BB28C00C1157A"
+               BuildableName = "libSwiftLispKit.a"
+               BlueprintName = "SwiftLispKit"
+               ReferencedContainer = "container:SwiftLisp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DC80D1FE228BCED200C1157A"
+               BuildableName = "SwiftLispTests.xctest"
+               BlueprintName = "SwiftLispTests"
                ReferencedContainer = "container:SwiftLisp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,14 +42,24 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DC80D1FE228BCED200C1157A"
+               BuildableName = "SwiftLispTests.xctest"
+               BlueprintName = "SwiftLispTests"
+               ReferencedContainer = "container:SwiftLisp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DCFDEA74226945FE002A6F83"
-            BuildableName = "SwiftLisp"
-            BlueprintName = "SwiftLisp"
-            ReferencedContainer = "container:SwiftLisp.xcodeproj">
+            BlueprintIdentifier = "DC80D1DD228BB28C00C1157A"
+            BuildableName = "libMocha.a"
+            BlueprintName = "Mocha"
+            ReferencedContainer = "container:mocha-lang.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -51,16 +75,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DCFDEA74226945FE002A6F83"
-            BuildableName = "SwiftLisp"
-            BlueprintName = "SwiftLisp"
-            ReferencedContainer = "container:SwiftLisp.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,16 +84,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DCFDEA74226945FE002A6F83"
-            BuildableName = "SwiftLisp"
-            BlueprintName = "SwiftLisp"
-            ReferencedContainer = "container:SwiftLisp.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

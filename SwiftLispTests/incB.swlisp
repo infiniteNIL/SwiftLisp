@@ -1,0 +1,9 @@
+;; A comment in a file
+(defn inc4 [a] (+ 4 a))
+(defn inc5 [a]  ;; a comment after code
+  (+ 5 a))
+
+(prn "incB.mal finished")
+"incB.mal return string"
+
+;; ending comment
