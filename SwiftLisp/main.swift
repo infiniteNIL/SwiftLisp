@@ -31,6 +31,18 @@ private func shouldUseReadline() -> Bool {
 }
 */
 
+private func title() {
+    print("SwiftLisp v0.1 © infiniteNIL Software, 2019")
+    print("A Lisp to Swift compiler")
+    print()
+}
+
+private func usage() {
+    title()
+    print("Usage: swiftlisp <filename>")
+    print()
+}
+
 do {
     try SwiftLispKit.start()
 
@@ -38,13 +50,14 @@ do {
         try SwiftLispKit.load(filename: CommandLine.arguments[1])
         exit(0)
     }
+    else {
+        usage()
+    }
 }
 catch {
     print(error)
     exit(-1)
 }
-
-print("SwiftLisp v0.1 © infiniteNIL Software, 2019")
 
 /*
 while true {
